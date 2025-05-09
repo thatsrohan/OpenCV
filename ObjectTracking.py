@@ -11,7 +11,7 @@ if not cap.isOpened():
         cap.release
         cv2.destroyAllWindows()
         while True:
-                ret=cap.read()
+                ret,frame=cap.read()
                 if not ret:
                         break
                 ok,bbox=tracker.update(frame)
