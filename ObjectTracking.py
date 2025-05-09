@@ -18,7 +18,7 @@ if not cap.isOpened():
 if ok:
                 top_left_coordinates=(bbox[0],bbox[1])
                 bottom_right_coordinates=(bbox[0]+bbox[2],bbox[1]-bbox[3])
-                cv2.rectangle(frame,p1,p2,(255,0,0),2,1)
+                cv2.rectangle(frame,top_left_coordinates,bottom_right_cooreinates,(255,0,0),2,1)
                 
 
                 
